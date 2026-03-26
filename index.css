@@ -61,7 +61,7 @@ h5{
 h2{
     color: rgb(255, 255, 255);
     font-size: 40px;
-        font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 .roblox{
@@ -116,4 +116,45 @@ img{
     height: 400x;
     padding-left: 40px;
     padding-right: 40px;
+}
+.help{
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.secret{
+    color:#000000;
+    background-color: #000000;
+}
+.sec:hover.picture{
+transform: scale(1,1);
+}
+.container{
+    width: 100%;
+
+}
+.container .box{
+    flex-basis: 40%;
+    position: relative;
+
+}
+
+.container .box img{
+    width: 100;
+    height:auto;
+    object-fit: cover;
+}
+.box .overlay{
+position:absolute;
+top:0;
+left: 100%;
+right:0;
+height:100%;
+overflow:hidden;
+transition: 0.5s;
+
+}
+
+.box:hover .overlay{
+    width:100%;
+    left:0;
 }
