@@ -46,14 +46,14 @@ h3{
 
 .game-container {
   display: flex;
-  justify-content: space-between; /* ← Лево, центр, право */
+  justify-content: space-between; 
   align-items: center;
   padding: 20px;
   text-align: center;
 }
 
 .game-block {
-  width: 30%; /* Можно менять */
+  width: 30%;
 }
 h5{
     color:white;
@@ -99,4 +99,21 @@ p{
     padding-right: 60px;
     padding-bottom: 50px;
     padding-top: 60px;
+    font-size: 30px;
+}
+img{
+ border-radius: 5%;
+}
+.center{
+    border-radius: 5%;
+}
+.cd{
+    width: 220x;
+    height: 325px;
+}
+.rr{
+    width: 400x;
+    height: 400x;
+    padding-left: 40px;
+    padding-right: 40px;
 }
