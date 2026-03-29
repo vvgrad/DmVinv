@@ -129,36 +129,9 @@ img{
 .sec:hover.picture{
 transform: scale(1,1);
 }
-.container{
-    width: 100%;
 
-}
-.container .box{
-    flex-basis: 40%;
-    position: relative;
 
-}
 
-.container .box img{
-    width: 100;
-    height:auto;
-    object-fit: cover;
-}
-.box .overlay{
-position:absolute;
-top:0;
-left: 100%;
-right:0;
-height:100%;
-overflow:hidden;
-transition: 0.5s;
-
-}
-
-.box:hover .overlay{
-    width:100%;
-    left:0;
-}
 .red{
     color:rgb(132, 181, 255)
 }
@@ -166,7 +139,7 @@ transition: 0.5s;
     margin: 0;
     padding: 0;
 }
-
+ 
 section{
     position: absolute;
     top: 50%;
@@ -174,6 +147,180 @@ section{
     transfrom:translate(-50%,-50%);
     width:  60px;
     height: 100px ;
+ 
+ 
+}
+ 
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 20px
+}
+ 
+a{
+    font-size: 30px;
+    padding:20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover{
+    color: #c4c4c4;
+    size:30px   ;
+}
+li{
+    display: inline;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+ background: linear-gradient(#6f00ff, #cc00ff);
+  z-index: 1000;
+  border-color: aliceblue;
+  border-width:100px'
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+
+}
+ 
+
+ 
 
 
+.secret{
+    color:#000000
+}
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border:0;
+    outline: 0;
+        font-family: Arial, Helvetica, sans-serif;
+
+} 
+
+html{
+    overflow-x:hidden;
+
+
+}
+img{
+    max-width: 100%;
+}
+
+
+
+.contacts{
+    padding:2rem 4% ;
+
+}
+
+.contacts .heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    color:aliceblue;
+    font-size: calc(25px + (70- 25)
+     * ((100vw - 300px)/(1600 - 360)))
+      
+}
+
+.contacts.heading span{
+    color:crimson
+}
+
+.contacts .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem
+
+}
+
+.contacts .row .img{
+    flex: 1 1 40rem;
+}
+
+.contacts .row form{
+    flex: 1 1 40rem;
+}
+
+.contacts .row form .box{
+ width: 100%;
+ margin: 1rem 0rem 2rem;
+ border-radius: 0.5rem;
+ padding: 1rem;
+}
+
+.contacts .row form span{
+    font-size: calc(12px + (16- 12)
+     * ((100vw - 300px)/(1600 - 360)))
+}
+
+.contacts .row form .gender{
+    margin: 1rem 0rem 2rem;
+}
+
+.contacts .row form .gender label{
+    margin-left: 0.2rem;
+    font-size: 1.6rem;
+    color:white;
+    cursor:pointer;
+}
+
+.contacts .row form .gender #female{
+    margin-left: 2rem
+}
+
+.contacts .row form .gender input{
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 30%;
+}
+
+.contacts .row form .gender input:checked{
+    background-color: red;
+    border-radius: 50%;
+}
+
+.contacts .row form .gender #female:checked + label[for=female] {
+    color:red
+}
+
+.contacts .row form .gender #male:checked + label[for=male] {
+    color:red
+}
+
+.btn {
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 .5rem 1rem #000000[0,0,0,.7];
+    font-weight:800;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #fd0000;
+    color:rgb(255, 255, 255)
 }
