@@ -340,52 +340,82 @@ transform: translateY(0px);
 
 
 slider {
-            width: 600px; /* Фиксированная ширина */
-            overflow: hidden; /* Скрываем выходящие за границы изображения */
+            width: 600px; 
+            overflow: hidden; 
             position: relative;
         }
 
-        /* Контейнер, в котором будут находиться все слайды */
+        
         .slides {
-            display: flex; /* Располагаем слайды в ряд */
-            width: 100%; /* Делаем ширину в три раза больше (по количеству слайдов) */
-            transition: transform 0.5s ease-in-out; /* Плавное переключение слайдов */
+            display: flex; 
+            width: 100%;
+            transition: transform 0.5s ease-in-out; 
         }
 
-        /* Каждый отдельный слайд */
+        
         .slide {
-            width: 100%; /* Каждый слайд занимает всю ширину контейнера */
-            flex-shrink: 0; /* Запрещаем уменьшение элементов внутри flex-контейнера */
+            width: 100%; 
+            flex-shrink: 0;
         }
 
-        /* Убираем отображение радиокнопок, они нужны только для управления */
+        
         input[type="radio"] {
             display: none;
         }
 
-        /* Переключение слайдов при выборе радиокнопки */
-        #slide1:checked ~ .slides { transform: translateX(0%); }   /* Первый слайд */
-        #slide2:checked ~ .slides { transform: translateX(-100%); } /* Второй слайд */
-        #slide3:checked ~ .slides { transform: translateX(-200%); } /* Третий слайд */
+      
+        #slide1:checked ~ .slides { transform: translateX(0%); }  
+        #slide2:checked ~ .slides { transform: translateX(-100%); } 
+        #slide3:checked ~ .slides { transform: translateX(-200%); } 
 
-        /* Контейнер для точек управления (индикаторов) */
+
         .controls {
-            text-align: center; /* Размещаем точки по центру */
-            margin-top: 2px; /* Добавляем отступ сверху */
+            text-align: center; 
+            margin-top: 2px; 
         }
 
-        /* Стиль для точек переключения */
+   
         .controls label {
-            display: inline-block; /* Размещаем точки в строку */
-            width: 15px; /* Размер точки */
+            display: inline-block;
+            width: 15px; 
             height: 15px;
-            background: gray; /* Серый цвет точки */
-            border-radius: 50%; /* Делаем точки круглыми */
-            margin: 5px; /* Добавляем небольшой отступ между ними */
-            cursor: pointer; /* Делаем курсор в виде руки при наведении */
+            background: gray; 
+            border-radius: 50%; 
+            margin: 5px; 
+            cursor: pointer; 
         }
 
-        /* Меняем цвет активной точки при выборе слайда */
+       
         input:checked + label {
             background: black;
         }
+
+
+
+
+   .block{
+    border:3px;
+    overflow:hidden;
+    background:#6f00ff;
+   }
+
+   .block div{
+    animation: running-text 6s linear infinite; 
+   }
+
+   .text{
+    padding: 5px;
+    color: #3e2943;
+    text-align: center;
+    font-size: 50px;
+   }
+
+   @keyframes running-text {
+    0%{
+        transform: translate(100% );
+    }
+
+    100%{
+        transform: translate(-100% );
+    }
+   }
