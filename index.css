@@ -419,3 +419,22 @@ slider {
         transform: translate(-100% );
     }
    }
+
+   .parallax{
+    background-image:url('support.html');
+    min-height:800px;
+    background-attachment: fixed;
+    background-position:    center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   }
+
+
+      .parrallax{
+    min-height:800px;
+    background-attachment: fixed;
+    background-position:    center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }

@@ -6,6 +6,14 @@
 <link rel="stylesheet" href="./index.css">
 <center>
     <body>
+      
+      
+      <div class="parallax">
+      
+        <div class="content">
+          DmVinv
+        </div>
+      </div>
       <center> <header>
 <ul align="center">
   <li >
@@ -41,6 +49,8 @@
         <p>hi!</p
       
       
+
+
       <center><img class="im_g" "DmVinvDm2'.JPG"width="500px"</center> 
 <h1><center>𝗗𝗺𝗩𝗶𝗻𝘃🔥</center></h1>
     <h3 ><p class="secret">Начинающий создатель игр в Roblox Studio. Главный создатель и владелец игр "ДОНАТНАЯ ПОМОЙКА"; "SKYSCRAPER TOWER" и другие</p></h3>
@@ -86,6 +96,10 @@
 <marquee>sdsd</marquee>
   <center><img src="ezgif-3013d8acc068f445.gif">
   </div>
+
+
+
+
   </center><h2>Мои любимые игры🎀:</h2>
    <div class="hidden"><center> <a href="https://www.roblox.com/games/108368760436337/Red-VS-Blue-Tycoon">
   <img class="game" src="REDBLUE.png" border-radius: 10px >
@@ -310,7 +324,7 @@
    <p>Воу, ты нашёл пасхалку!</p>
 </center>
 
-
+<div class="parralax">
 <sections class="contacts">
   <h2 class="heading"><span>Contact</span> Us</h2>
 
@@ -395,7 +409,7 @@ placeholder="Я люблю играть в видеоигры, и я самый 
 </div>
 </sections>
 <form action="https://api.web3forms.com/submit" method="POST">
-
+</div>
 
 
   <center>
@@ -410,7 +424,7 @@ placeholder="Я люблю играть в видеоигры, и я самый 
   
   <p>Воу, ты нашёл пасхалку!</p>
    
-
+<input type="button" onclick="notifSet()" value="Включить уведомления"
 
      <p>ffff</p>
      <a href="support.html">Поддержать меня</a>
@@ -427,9 +441,31 @@ placeholder="Я люблю играть в видеоигры, и я самый 
 </body>
 <link rel="stylesheet" href="js.js">
 <script src="js.js"></script>
- <script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+ <script>
+function notifyMe() {
+  var Notification = new Notification("Может отдохнёшь..?", {
+    tag: "ache-mail",
+    body: "Пора отдохнуть, чувак",
+    icon: "http://127.0.0.1:5500/ezgif-40af91923f501241.gif"
+  })
+}
+
+
+
+
+  function notifSet(){
+    if (!("Notification" in window))
+    alert("Ваш браузер не поддерживает уведомления.");
+  else if(Notification.permission === "granted")
+  setTimeout(notifyMe, 2000)
+    else if(Notification.permission !=="denied"){
+      Notification.requestPermission (function (permission) {
+        Notification.permission = permission;
+        if (permission === "granted")
+          setTimeout(notifyMe, 2000)
+      })
+    }
+  }
+ </script>
     </head>
 </html>
