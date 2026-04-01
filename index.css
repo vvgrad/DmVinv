@@ -421,17 +421,19 @@ slider {
    }
 
    .parallax{
-    background-image:url('support.html');
+    background-image:url('https://image.api.playstation.com/vulcan/ap/rnd/202504/1706/1ebb066e6ffe1e6fd20c5850795efc65526552991f494193.png');
     min-height:800px;
     background-attachment: fixed;
     background-position:    center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(50%);
     
    }
 
 
       .parrallax{
+    background-image: url(https://static.tildacdn.com/tild3236-3566-4735-b364-616537623666/_____-min.png);
     min-height:800px;
     background-attachment: fixed;
     background-position:    center;
