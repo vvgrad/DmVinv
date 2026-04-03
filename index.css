@@ -433,10 +433,38 @@ slider {
 
 
       .parrallax{
-    background-image: url(https://static.tildacdn.com/tild3236-3566-4735-b364-616537623666/_____-min.png);
+    background-image: url('https://static-cdn.jtvnw.net/jtv_user_pictures/ef3698bb-6100-46ff-9462-cbcfd4b7ad21-profile_banner-480.png');
     min-height:800px;
     background-attachment: fixed;
     background-position:    center;
     background-repeat: no-repeat;
     background-size: cover;
+     filter: brightness(50%);
+   }
+
+
+   .fall{
+    padding-top: 40px;
+   }
+
+         .pxta{
+    background-image: url('https://i.ytimg.com/vi/c28eqv7QO78/maxresdefault.jpg');
+    min-height:800px;
+    background-attachment: fixed;
+    background-position:    center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     filter: brightness(50%);
+   }
+
+
+
+            .potemer{
+    background-image: url('https://galaxy.ai/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FyReda8QOI08%2Fmaxresdefault.jpg&w=3840&q=75');
+    min-height:800px;
+    background-attachment: fixed;
+    background-position:    center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     filter: brightness(50%);
    }
