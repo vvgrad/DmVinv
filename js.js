@@ -23,3 +23,13 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 elements.forEach(el => observer.observe(el));
+
+(function () {
+  var toggle = document.getElementById('site-nav-toggle');
+  if (!toggle) return;
+  document.querySelectorAll('.site-nav-panel a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      toggle.checked = false;
+    });
+  });
+})();
